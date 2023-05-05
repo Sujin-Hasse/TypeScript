@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "Node",
+      "target": "ESNext", //변환되는 버전이 가장 최근ESNext이다.
+      "noImplicitAny": true, //묵시적으로 타입을 안쓰더라도 any타입을 쓰는 것은 금지
+      "removeComments": true, // 변환할 때 주석없애기
+      "outDir": "dist", //변환된 파일을 어디로 보낼지 dist라는 폴더를 만들어서 여기에 넣겠다.
+      "esModuleInterop": true
+    },
+    "include": [
+      "src/**/*" // 이 안에 있는 파일들이 변환될 예정
+    ],
+    "exclude": [
+      "node_modules",//얘네는 관심끄겠습니다. 변환되던말던~~~
+      "**/*.spec.ts"
+    ]
+  }
